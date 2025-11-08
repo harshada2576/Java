@@ -39,5 +39,6 @@ public class InvalidPatient
 		{
 			
 		}
+        sc.close();
 	}
 }
