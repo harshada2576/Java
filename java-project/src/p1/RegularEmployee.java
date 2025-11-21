@@ -1,0 +1,11 @@
+package p1; 
+ 
+public class RegularEmployee extends Employee 
+{ 
+    public RegularEmployee(int employeeId, String name, double salary) { 
+        super(employeeId, name, salary); 
+    } 
+} 
+ 
+ 
+ 
