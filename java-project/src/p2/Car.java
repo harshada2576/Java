@@ -1,0 +1,22 @@
+package p2;
+
+public class Car extends Vehicle {
+    private int numberOfSeats;
+
+    public Car(String vehicleId, String brand, double rentalPricePerDay, int numberOfSeats) {
+        super(vehicleId, brand, rentalPricePerDay);
+        this.numberOfSeats = numberOfSeats;
+    }
+
+    @Override
+    public double calculateRentalCost(int days) {
+        return rentalPricePerDay * days; // same as Vehicle
+    }
+
+    @Override
+    public void displayDetails() {
+        super.displayDetails();
+        System.out.println("Seats: " +
+                numberOfSeats);
+    }
+}
